@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    
+</head>
+  
+  <body>
+    
+   
+
+<div class="title">
+    
+    <p>Rock Paper Scissors </p>
+
+</div>
+
+<div class="option">
+
+    <button onclick="
+      playGame('✊Rock');
+    ">✊Rock</button>
+
+    <button onclick="
+      playGame('✋Paper');
+    ">✋Paper</button>
+
+    <button onclick="
+      playGame('✌️Scissors');
+    ">✌️Scissors</button>
+
+</div>
+
+<div>
+    <button id="reset" onclick="
+      score.wins = 0;
+      score.losses = 0;
+      score.ties = 0;
+      //part ng local storage na nagsave ng score kht iclose ang page.
+      //localStorage.removeItem('score');
+      resetButton();
+    ">Reset Score</button>
+</div>
+
+    <form>
+    <textarea id="final"></textarea>
+    </form>
+</body> 
+ <script src="script.js"></script> 
+  
+ </html>
